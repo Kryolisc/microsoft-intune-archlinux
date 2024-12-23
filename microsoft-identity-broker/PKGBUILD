@@ -7,7 +7,7 @@ pkgdesc="microsoft-identity-broker"
 url="https://packages.microsoft.com/ubuntu/24.04/prod/pool/main/m/microsoft-identity-broker"
 license=("GPL2")
 arch=("x86_64")
-depends=("dbus" "gnome-keyring" "systemd" "jre11-openjdk")
+depends=("dbus" "gnome-keyring" "systemd" "jre17-openjdk")
 makedepends=()
 provides=("msft-identity-broker=${pkgver}")
 conflicts=("msft-identity-broker")
