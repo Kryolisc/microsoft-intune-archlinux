@@ -1,3 +1,35 @@
+# Temp. Fork
+
+3) install microsoft-edge-stable-bin
+4) clone repository
+5) run l1 script
+6) install intune-portal manually
+7) sudo systemctl enable intune-daemon.service
+8) systemctl --user enable intune-agent.service intune-agent.timer
+9) mkdir --parents ~/.local/share/dbus-1/services/
+10) echo "[D-BUS Service]
+Name=org.freedesktop.secrets
+Exec=/usr/bin/kwalletd6" > ~/.local/share/dbus-1/services/org.freedesktop.secrets.service
+1)  echo "NAME="Ubuntu"
+VERSION="24.04 LTS (Noble Numbat)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 24.04 LTS"
+VERSION_ID="24.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=noble
+UBUNTU_CODENAME=noble" > /etc/os-release
+1)  restart
+2)  unlock keyring (?)
+3)  start edge & log in
+4)  start intune-portal & register
+
+
+
+
 # Intune for Arch Linux
 
 You have two options to access MSFT resources on Arch Linux.
