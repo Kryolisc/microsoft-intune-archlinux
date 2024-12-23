@@ -1,7 +1,7 @@
 # Maintainer: Recolic K <root@recolic.net>
 
 pkgname=msalsdk-dbusclient
-pkgver=1.0.0
+pkgver=1.0.1
 pkgrel=1
 pkgdesc="Microsoft Authentication Library cross platform. Dbus client for talking to MSAL broker"
 url="https://packages.microsoft.com/ubuntu/20.04/prod/pool/main/m/msalsdk-dbusclient"
@@ -14,8 +14,7 @@ replaces=()
 backup=()
 # https://packages.debian.org/bullseye/amd64/libsdbus-c++0/download
 source=("source.deb::$url/${pkgname}_${pkgver}_amd64.deb")
-validpgpkeys=("")
-sha256sums=("78588d17039d3bf3096f1a0476e70eece76d732fd938e447e37a3c3c33af0b36")
+sha256sums=("d1d1eee986c6181db1937e2a44eeb32f0c53aa5f1397c978f06f0ad15d147c50")
 install=x.install
 
 package() {
